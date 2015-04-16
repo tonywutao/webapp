@@ -5,5 +5,5 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y -q curl python-all python-
 ADD ./webapp /opt/webapp/
 WORKDIR /opt/webapp
 RUN pip install -r requirements.txt
-EXPOSE 5000
+EXPOSE 50000
 CMD ["python", "app.py"]
